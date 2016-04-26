@@ -1,5 +1,7 @@
 This repo creates a test runner (using AngularJS) that runs automated tests in the browser and reports on their results as soon as each test completes.
 
+(See instructions.md for more details of how the test runner works)
+
 NOTE: To run a basic server that will serve the files (display the app),
 cd into the directory of this index.html and
 type: python -m SimpleHTTPServer
