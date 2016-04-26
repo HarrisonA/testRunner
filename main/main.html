@@ -1,0 +1,18 @@
+<h1>SpecRunner</h1>
+
+<button ng-click='startTest()'>Start Test</button>
+
+<table>
+	<tr ng-repeat="test in testArray"> 
+	<td>{{test.description}}</td>
+	<td><span ng-class="{'red': test.status == 'Failed!' , 'green': test.status == 'Passed!', 'animate-flicker': test.status == 'Running'} ">{{test.status}}<span></td>
+	</tr>
+</table>
+
+<div class="green">Total passing tests: {{passing}}</div>
+<div class="red">Total failing tests: {{failing}}</div>
+<div>Total tests still running: {{running}}</div>
+<div ng-show="allDone" class="green">All test are done!</div>
+
+
+
